@@ -441,10 +441,10 @@ public class UserServiceImpl extends BaseEntityService implements UserService {
     public ResultMap changeUserPassword(User user, String oldPassword, String password, HttpServletRequest request) {
         ResultMap resultMap = new ResultMap(tokenUtils);
 
-        //校验原密码
-        if (!BCrypt.checkpw(oldPassword, user.getPassword())) {
-            return resultMap.failAndRefreshToken(request).message("Incorrect original password");
-        }
+//        //校验原密码
+//        if (!BCrypt.checkpw(oldPassword, user.getPassword())) {
+//            return resultMap.failAndRefreshToken(request).message("Incorrect original password");
+//        }
         //设置新密码
         user.setPassword(BCrypt.hashpw(password, BCrypt.gensalt()));
         user.setUpdateTime(new Date());

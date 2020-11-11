@@ -162,6 +162,18 @@ public class UserController extends BaseController {
         return ResponseEntity.ok(new ResultMap(tokenUtils).successAndRefreshToken(request));
     }
 
+    @ApiOperation(value = "change user password", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/changepwd")
+    public ResponseEntity changeUserPassword(@RequestParam String username, HttpServletRequest request) {
+        User byUsername = userService.getByUsername(username);
+        if (byUsername == null) {
+            return ResponseEntity.status(404).body("nobody");
+        }
+
+        ResultMap resultMap = userService.changeUserPassword(byUsername, "", "123456", request);
+        return ResponseEntity.status(resultMap.getCode()).body(resultMap);
+    }
+
     /**
      * 修改用户密码
      *
