@@ -509,13 +509,13 @@ export class SourceList extends React.PureComponent<
 
     return (
       <Container>
-        <Helmet title="Source" />
+        <Helmet title="数据源管理" />
         <ContainerTitle>
           <Row>
             <Col span={24}>
               <Breadcrumb className={utilStyles.breadcrumb}>
                 <Breadcrumb.Item>
-                  <Link to="">Source</Link>
+                  <Link to="">数据源管理</Link>
                 </Breadcrumb.Item>
               </Breadcrumb>
             </Col>
@@ -526,7 +526,7 @@ export class SourceList extends React.PureComponent<
             <Box.Header>
               <Box.Title>
                 <Icon type="bars" />
-                Source List
+                  数据源列表
               </Box.Title>
               <Box.Tools>
                 <Tooltip placement="bottom" title="新增">

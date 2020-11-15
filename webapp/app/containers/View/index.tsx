@@ -286,13 +286,13 @@ export class ViewList extends React.PureComponent<IViewListProps, IViewListState
     return (
       <>
         <Container>
-          <Helmet title="View" />
+          <Helmet title="模型" />
           <ContainerTitle>
             <Row>
               <Col span={24}>
                 <Breadcrumb className={utilStyles.breadcrumb}>
                   <Breadcrumb.Item>
-                    <Link to="">View</Link>
+                    <Link to="">模型</Link>
                   </Breadcrumb.Item>
                 </Breadcrumb>
               </Col>
@@ -303,7 +303,7 @@ export class ViewList extends React.PureComponent<IViewListProps, IViewListState
               <Box.Header>
                 <Box.Title>
                   <Icon type="bars" />
-                  View List
+                  模型列表
                 </Box.Title>
                 <Box.Tools>
                   <Tooltip placement="bottom" title="新增">

@@ -141,7 +141,7 @@ export class VizList extends React.Component<
             <Col span={24}>
               <Breadcrumb className={utilStyles.breadcrumb}>
                 <Breadcrumb.Item>
-                  <Link to="">Viz</Link>
+                  <Link to="">项目</Link>
                 </Breadcrumb.Item>
               </Breadcrumb>
             </Col>
