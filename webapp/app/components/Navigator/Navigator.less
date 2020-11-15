@@ -2,13 +2,12 @@
 
 .header {
   height: 64px;
-  background-color: @body-background;
+  background-color: #007ad9 !important;
   box-shadow: @header-box-shadow;
   flex-shrink: 0;
   z-index: @header-index;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 
   &.hide {
@@ -16,8 +15,14 @@
   }
 }
 
+.title {
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 .logo {
-  width: 200px;
+  width: 100px;
   height: 64px;
   display: flex;
   flex-direction: column;
@@ -29,8 +34,8 @@
   }
 
   img {
-    width: 160px;
-    height: 32px;
+    width: 100px;
+    height: 52px;
   }
 }
 

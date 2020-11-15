@@ -85,37 +85,20 @@ export function Navigator (props: INavigatorProps) {
       <div className={styles.logoPc}>
         <div className={styles.logo}>
           <Link to="/projects">
-            <img src={require('assets/images/logo.svg')} />
+            <img src={require('assets/images/logo.png')} />
           </Link>
         </div>
+      </div>
+      <div className={styles.title}>
+        内蒙古统计 “一张图” 综合应用分析平台
       </div>
       <div className={styles.logoMobile}>
         <div className={styles.logo}>
           <Link to="/projects">
-            <img src={require('assets/images/logo_mobile.svg')} />
+            <img src={require('assets/images/logo.png')} />
           </Link>
         </div>
       </div>
-      <ul className={styles.tools}>
-        <li>
-          <DownloadList
-            downloadList={downloadList}
-            onLoadDownloadList={onLoadDownloadList}
-            onDownloadFile={onDownloadFile}
-          />
-        </li>
-        <li>
-          <Icon type="file-text" onClick={goDoc} />
-        </li>
-        <li>
-          <Icon type="github" onClick={goGithub}/>
-        </li>
-        <li>
-          <Dropdown overlay={menu} trigger={['click']} placement="bottomCenter">
-            <Icon type="user" />
-          </Dropdown>
-        </li>
-      </ul>
     </nav>
   )
 }

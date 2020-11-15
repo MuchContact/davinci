@@ -56,8 +56,8 @@ export class Login extends React.PureComponent<
   constructor(props) {
     super(props)
     this.state = {
-      username: '',
-      password: ''
+      username: 'guest',
+      password: '123456'
     }
   }
 
@@ -72,6 +72,8 @@ export class Login extends React.PureComponent<
       setToken(token)
       this.props.onLogged(JSON.parse(loginUser))
       this.props.history.replace('/')
+    }else {
+        this.doLogin(undefined)
     }
   }
 
@@ -98,7 +100,7 @@ export class Login extends React.PureComponent<
   }
 
   private doLogin = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+    // e.preventDefault()
     const { onLogin, history } = this.props
     const { username, password } = this.state
 

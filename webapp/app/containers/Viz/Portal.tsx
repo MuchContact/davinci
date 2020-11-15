@@ -186,7 +186,7 @@ const VizPortal: React.FC<IVizPortalProps> = (props) => {
                   </Button>
                   或
                   <Button size="small" type="link">
-                    创建 Dashboard
+                    创建仪表盘
                   </Button>
                 </p>
               }

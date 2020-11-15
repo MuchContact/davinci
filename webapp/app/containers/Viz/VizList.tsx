@@ -135,7 +135,7 @@ export class VizList extends React.Component<
     })
     return (
       <Container>
-        <Helmet title="Viz" />
+        <Helmet title="项目" />
         <ContainerTitle>
           <Row>
             <Col span={24}>
@@ -158,7 +158,7 @@ export class VizList extends React.Component<
                         this.state.collapse.dashboard ? 'down' : 'right'
                       }`}
                     />
-                    Dashboard
+                    仪表盘
                   </Col>
                 </Row>
               </Box.Title>
@@ -186,7 +186,7 @@ export class VizList extends React.Component<
                     <Icon
                       type={`${this.state.collapse.display ? 'down' : 'right'}`}
                     />
-                    Display
+                    大屏
                   </Col>
                 </Row>
               </Box.Title>
