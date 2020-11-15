@@ -56,7 +56,7 @@ export class Login extends React.PureComponent<
   constructor(props) {
     super(props)
     this.state = {
-      username: 'guest',
+      username: 'super',
       password: '123456'
     }
   }

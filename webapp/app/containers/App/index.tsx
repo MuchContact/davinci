@@ -129,8 +129,8 @@ export class App extends React.PureComponent<AppProps> {
     return (
       <div>
         <Helmet
-          titleTemplate="%s - Davinci"
-          defaultTitle="Davinci Web Application"
+          titleTemplate="%s - 大数据展示平台"
+          defaultTitle="大数据展示平台"
           meta={[
             {
               name: 'description',
