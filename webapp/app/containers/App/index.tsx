@@ -115,7 +115,7 @@ export class App extends React.PureComponent<AppProps> {
 
     return (
       logged ? (
-        <Redirect to="/projects" />
+        <Redirect to="/project/1" />
       ) : (
         <Redirect to="/login" />
       )

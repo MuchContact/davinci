@@ -132,24 +132,24 @@ const Toolbar: React.FC<IToolbarProps> = React.memo(
 
     return (
       <div className={styles.toolbar}>
-        <div className={styles.menu}>{menus}</div>
-        <div className={styles.searchs}>
-          <EnhanceInput
-            type="text"
-            ref={searchRef}
-            val={searchKeywords}
-            onChange={getKeywords}
-            placeholder="查找您的项目"
-          />
-          <span className={styles.searchButton}>
-            <i className="iconfont icon-search" />
-          </span>
-        </div>
-        <div className={styles.create}>
-          <Button icon="plus" type="primary" shape="round" onClick={addPro}>
-            {documentWidth < 860 ? '' : '创建'}
-          </Button>
-        </div>
+        {/*<div className={styles.menu}>{menus}</div>*/}
+        {/*<div className={styles.searchs}>*/}
+          {/*<EnhanceInput*/}
+            {/*type="text"*/}
+            {/*ref={searchRef}*/}
+            {/*val={searchKeywords}*/}
+            {/*onChange={getKeywords}*/}
+            {/*placeholder="查找您的项目"*/}
+          {/*/>*/}
+          {/*<span className={styles.searchButton}>*/}
+            {/*<i className="iconfont icon-search" />*/}
+          {/*</span>*/}
+        {/*</div>*/}
+        {/*<div className={styles.create}>*/}
+          {/*<Button icon="plus" type="primary" shape="round" onClick={addPro}>*/}
+            {/*{documentWidth < 860 ? '' : '创建'}*/}
+          {/*</Button>*/}
+        {/*</div>*/}
       </div>
     )
   }

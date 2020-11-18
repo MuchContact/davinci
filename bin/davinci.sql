@@ -689,10 +689,13 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 
 INSERT INTO `user` (`id`, `email`, `username`, `password`, `admin`, `active`, `name`, `description`, `department`, `avatar`, `create_time`, `create_by`, `update_by`, `update_time`)
-VALUES (1, 'guest@davinci.cn', 'guest', '$2a$10$RJKb4jhMgRYnGPlVRV036erxQ3oGZ8NnxZrlrrBJJha9376cAuTRO', 1, 1, NULL, NULL, NULL, NULL, '2020-01-01 00:00:00', 0, NULL, NULL);
+VALUES (1, 'super@davinci.cn', 'super', '$2a$10$ehSeyVQpdiU/cYQopTQMSemsfn0hJ5eZ.y2vAf8VzBkQztp2akIwq', 1, 1, NULL, NULL, NULL, NULL, '2020-01-01 00:00:00', 0, NULL, NULL);
 
 INSERT INTO `organization` (`id`, `name`, `description`, `avatar`, `user_id`, `project_num`, `member_num`, `role_num`, `allow_create_project`, `member_permission`, `create_time`, `create_by`, `update_time`, `update_by`)
 VALUES (1, 'guest\'s Organization', NULL, NULL, 1, 0, 1, 0, 1, 1, '2020-01-01 00:00:00', 1, NULL, NULL);
 
 INSERT INTO `rel_user_organization` (`id`, `org_id`, `user_id`, `role`, `create_by`, `create_time`, `update_by`, `update_time`)
 VALUES (1, 1, 1, 1, 1, '2020-01-01 00:00:00', NULL, NULL);
+
+INSERT INTO `project` (name,description,pic,org_id,user_id,visibility,star_num,is_transfer,initial_org_id,create_by,create_time,update_by,update_time) VALUES
+	 ('demo',NULL,'4',1,1,1,0,0,1,1,'2020-11-16 23:58:37',NULL,NULL);

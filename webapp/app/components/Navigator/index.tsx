@@ -84,7 +84,7 @@ export function Navigator (props: INavigatorProps) {
     <nav className={headerClass}>
       <div className={styles.logoPc}>
         <div className={styles.logo}>
-          <Link to="/projects">
+          <Link to="/project/1">
             <img src={require('assets/images/logo.png')} />
           </Link>
         </div>
@@ -94,7 +94,7 @@ export function Navigator (props: INavigatorProps) {
       </div>
       <div className={styles.logoMobile}>
         <div className={styles.logo}>
-          <Link to="/projects">
+          <Link to="/project/1">
             <img src={require('assets/images/logo.png')} />
           </Link>
         </div>

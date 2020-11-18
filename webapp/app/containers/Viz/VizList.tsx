@@ -148,35 +148,35 @@ export class VizList extends React.Component<
           </Row>
         </ContainerTitle>
         <ContainerBody>
-          <Box>
-            <Box.Header>
-              <Box.Title>
-                <Row onClick={this.onCollapseChange('dashboard')}>
-                  <Col span={20}>
-                    <Icon
-                      type={`${
-                        this.state.collapse.dashboard ? 'down' : 'right'
-                      }`}
-                    />
-                    仪表盘
-                  </Col>
-                </Row>
-              </Box.Title>
-            </Box.Header>
-            <div className={isHideDashboardStyle}>
-              <PortalList
-                currentProject={currentProject}
-                projectId={projectId}
-                portals={portals}
-                onPortalClick={this.goToPortal}
-                onAdd={onAddPortal}
-                onEdit={onEditPortal}
-                onDelete={onDeletePortal}
-                onCheckUniqueName={onCheckUniqueName}
-                onExcludeRoles={this.props.onExcludeRoles}
-              />
-            </div>
-          </Box>
+          {/*<Box>*/}
+            {/*<Box.Header>*/}
+              {/*<Box.Title>*/}
+                {/*<Row onClick={this.onCollapseChange('dashboard')}>*/}
+                  {/*<Col span={20}>*/}
+                    {/*<Icon*/}
+                      {/*type={`${*/}
+                        {/*this.state.collapse.dashboard ? 'down' : 'right'*/}
+                      {/*}`}*/}
+                    {/*/>*/}
+                    {/*仪表盘*/}
+                  {/*</Col>*/}
+                {/*</Row>*/}
+              {/*</Box.Title>*/}
+            {/*</Box.Header>*/}
+            {/*<div className={isHideDashboardStyle}>*/}
+              {/*<PortalList*/}
+                {/*currentProject={currentProject}*/}
+                {/*projectId={projectId}*/}
+                {/*portals={portals}*/}
+                {/*onPortalClick={this.goToPortal}*/}
+                {/*onAdd={onAddPortal}*/}
+                {/*onEdit={onEditPortal}*/}
+                {/*onDelete={onDeletePortal}*/}
+                {/*onCheckUniqueName={onCheckUniqueName}*/}
+                {/*onExcludeRoles={this.props.onExcludeRoles}*/}
+              {/*/>*/}
+            {/*</div>*/}
+          {/*</Box>*/}
           <div className={styles.spliter16} />
           <Box>
             <Box.Header>
